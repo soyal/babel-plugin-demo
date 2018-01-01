@@ -10,10 +10,26 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^22.0.0",
+    "babel-core": "^6.26.0",
     "eslint": "^4.14.0",
     "eslint-plugin-typescript": "^0.8.1",
+    "jest": "^22.0.4",
     "prettier": "^1.9.2",
+    "ts-jest": "^22.0.0",
     "typescript": "^2.6.2",
     "typescript-eslint-parser": "^11.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }
