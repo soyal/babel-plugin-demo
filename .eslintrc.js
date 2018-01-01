@@ -1,4 +1,8 @@
-{
+module.exports = {
+    'parser': 'typescript-eslint-parser',
+    'plugins': [
+        'typescript'
+    ],
     "env": {
         "browser": true,
         "commonjs": true,
@@ -7,15 +11,8 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true
-        },
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
         "indent": [
             "error",
@@ -34,4 +31,4 @@
             "never"
         ]
     }
-}
+};
